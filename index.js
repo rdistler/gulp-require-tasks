@@ -40,6 +40,7 @@ function gulpRequireTasks (options) {
 
     gulp.task(
       taskNameFromPath(modulePath),
+      module.help,
       module.dep,
       module.nativeTask || taskFunction
     );
